@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1C4136"
-    tools:context="br.unipar.minifinance.MainActivity">
+    tools:context="br.unipar.minifinance.LoginActivity">
 
     <LinearLayout
         android:id="@+id/mainLayout"
@@ -23,12 +23,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:orientation="vertical"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_gravity="top"
             android:layout_weight="1"
             android:gravity="center|top"
@@ -38,6 +32,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="60sp"
                 android:src="@drawable/logo" />
 
             <TextView
@@ -46,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="Mini Finance"
+                android:text="Login"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -56,6 +51,34 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/txtUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Usuário"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Senha"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+
                 <Button
                     android:id="@+id/btnEntrar"
                     android:layout_width="match_parent"
@@ -64,10 +87,11 @@
                     android:text="Entrar" />
 
                 <Button
-                    android:id="@+id/btnCadastrar"
+                    android:id="@+id/btnVoltar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cadastrar" />
+                    android:text="Voltar" />
+
             </LinearLayout>
 
         </LinearLayout>

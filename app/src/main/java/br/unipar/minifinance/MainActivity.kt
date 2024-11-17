@@ -19,18 +19,17 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val icoHome = findViewById<Button>(R.id.IcoHOME)
-        val icoCarteira = findViewById<Button>(R.id.IcoCARTEIRA)
-        val icoMovimento = findViewById<Button>(R.id.IcoMOVIMENTO)
+        val btnEntrar = findViewById<Button>(R.id.btnCadastrar)
+        val btnCadastrar = findViewById<Button>(R.id.btnCadastrar)
 
-        icoCarteira.setOnClickListener {
+        btnEntrar.setOnClickListener {
             val intent = Intent(this, WalletActivity::class.java)
 
             startActivity(intent)
             finish()
         }
 
-        icoMovimento.setOnClickListener {
+        btnCadastrar.setOnClickListener {
             val intent = Intent(this, MovementActivity::class.java)
 
             startActivity(intent)

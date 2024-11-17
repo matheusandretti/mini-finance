@@ -24,7 +24,7 @@ class MovementActivity : AppCompatActivity() {
         val icoMovimento = findViewById<Button>(R.id.IcoMOVIMENTO)
 
         icoHome.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
 
             startActivity(intent)
             finish()

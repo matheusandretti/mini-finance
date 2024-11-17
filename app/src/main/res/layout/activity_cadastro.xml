@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1C4136"
-    tools:context="br.unipar.minifinance.MainActivity">
+    tools:context="br.unipar.minifinance.CadastroActivity">
 
     <LinearLayout
         android:id="@+id/mainLayout"
@@ -23,12 +23,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:orientation="vertical"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_gravity="top"
             android:layout_weight="1"
             android:gravity="center|top"
@@ -38,6 +32,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="60sp"
                 android:src="@drawable/logo" />
 
             <TextView
@@ -46,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="Mini Finance"
+                android:text="Cadastro"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -56,18 +51,64 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btnEntrar"
+                <TextView
+                    android:id="@+id/txtUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center|center_vertical"
-                    android:text="Entrar" />
+                    android:text="Nome"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edtUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Senha"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edtSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/btnCadastrar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center|center_vertical"
                     android:text="Cadastrar" />
+
+                <Button
+                    android:id="@+id/btnVoltar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Voltar" />
+
             </LinearLayout>
 
         </LinearLayout>
