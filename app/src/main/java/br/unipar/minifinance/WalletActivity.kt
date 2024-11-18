@@ -20,7 +20,7 @@ class WalletActivity : AppCompatActivity() {
         }
 
         val icoHome = findViewById<Button>(R.id.IcoHOME)
-        val icoCarteira = findViewById<Button>(R.id.IcoCARTEIRA)
+        val icoMov2 = findViewById<Button>(R.id.icoMov2)
         val icoMovimento = findViewById<Button>(R.id.IcoMOVIMENTO)
 
         icoHome.setOnClickListener {
@@ -31,11 +31,19 @@ class WalletActivity : AppCompatActivity() {
         }
 
         icoMovimento.setOnClickListener {
-            val intent = Intent(this, MovementActivity::class.java)
+            movimento()
+        }
 
-            startActivity(intent)
-            finish()
+        icoMov2.setOnClickListener {
+            movimento()
         }
 
     }
+    fun movimento() {
+        val intent = Intent(this, MovementActivity::class.java)
+
+        startActivity(intent)
+        finish()
+    }
+
 }
