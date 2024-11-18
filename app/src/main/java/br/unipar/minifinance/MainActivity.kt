@@ -19,18 +19,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val btnEntrar = findViewById<Button>(R.id.btnCadastrar)
+        val btnEntrar = findViewById<Button>(R.id.btnEntrar)
         val btnCadastrar = findViewById<Button>(R.id.btnCadastrar)
 
         btnEntrar.setOnClickListener {
-            val intent = Intent(this, WalletActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
 
             startActivity(intent)
             finish()
         }
 
         btnCadastrar.setOnClickListener {
-            val intent = Intent(this, MovementActivity::class.java)
+            val intent = Intent(this, CadastroActivity::class.java)
 
             startActivity(intent)
             finish()

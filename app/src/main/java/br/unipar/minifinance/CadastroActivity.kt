@@ -19,7 +19,7 @@ class CadastroActivity : AppCompatActivity() {
             insets
         }
 
-        val btnCadastrar = findViewById<Button>(R.id.btnCadastrar)
+        val btnCadastrar = findViewById<Button>(R.id.btnCad2)
         val btnVoltar = findViewById<Button>(R.id.btnVoltar)
 
         btnCadastrar.setOnClickListener {

@@ -80,7 +80,7 @@
                     android:inputType="text" />
 
                 <Button
-                    android:id="@+id/btnEntrar"
+                    android:id="@+id/btnEntrar2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_vertical"

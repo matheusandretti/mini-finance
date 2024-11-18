@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
-        val btnEntrar = findViewById<Button>(R.id.btnCadastrar)
+        val btnEntrar = findViewById<Button>(R.id.btnEntrar2)
         val btnVoltar = findViewById<Button>(R.id.btnVoltar)
 
         btnEntrar.setOnClickListener {

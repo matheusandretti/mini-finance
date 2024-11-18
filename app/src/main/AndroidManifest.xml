@@ -21,9 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.unipar.minifinance.WalletActivity" />
-        <activity android:name="br.unipar.minifinance.MovementActivity" />
-
+        <activity android:name="br.unipar.minifinance.CadastroActivity"/>
+        <activity android:name="br.unipar.minifinance.LoginActivity"/>
+        <activity android:name="br.unipar.minifinance.WalletActivity"/>
+        <activity android:name="br.unipar.minifinance.MovementActivity"/>
+        <activity android:name="br.unipar.minifinance.HomeActivity"/>
     </application>
 
 </manifest>
