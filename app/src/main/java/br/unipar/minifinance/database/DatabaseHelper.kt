@@ -17,19 +17,9 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         private const val COLUMN_USERNAME = "username"
         private const val COLUMN_EMAIL    = "email"
         private const val COLUMN_PASSWORD = "password"
-
-        @Volatile
-        private var instance: DatabaseHelper? = null
-
-        fun getInstance(context: Context): DatabaseHelper {
-            return instance ?: synchronized(this) {
-                instance ?: DatabaseHelper(context).also { instance = it }
-            }
-        }
     }
 
     override fun onCreate(db: SQLiteDatabase) {
-        // Criação da tabela de usuários
         val createTable = """
             CREATE TABLE $TABLE_USERS (
                 $COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT,
